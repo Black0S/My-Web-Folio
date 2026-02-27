@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Journal — Portfolio</title>
+  <meta name="description" content="Articles, réflexions et tutoriels sur le développement web, le design et la vie d'indépendant." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>" />
+</head>
+<body>
+  <a href="#top" class="back-top">↑</a>
+
+  <nav class="nav" id="top">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-mark">✦</div>
+        <span>Votre Nom</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="projects.html" class="nav-link">Projets</a></li>
+        <li><a href="about.html" class="nav-link">À propos</a></li>
+        <li><a href="blog.html" class="nav-link">Journal</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-btn"><span class="theme-icon">☀️</span></button>
+        <button class="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="projects.html" class="nav-link">Projets</a>
+      <a href="about.html" class="nav-link">À propos</a>
+      <a href="blog.html" class="nav-link">Journal</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+
+    <div class="page-hero">
+      <div class="container">
+        <div style="font-family:var(--font-mono);font-size:0.65rem;color:var(--gold);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:16px" data-reveal="fade">Réflexions · Tutoriels · Ressources</div>
+        <h1 style="font-family:var(--font-display);font-weight:300;font-size:clamp(3rem,7vw,5.5rem);line-height:1.05;color:var(--text-1);margin-bottom:20px" data-reveal="up" data-delay="60">
+          Journal
+        </h1>
+        <p style="font-size:1rem;color:var(--text-2);font-weight:300;max-width:500px;line-height:1.8" data-reveal="up" data-delay="120">
+          Des articles sur le développement web moderne, le design d'interfaces et la vie d'indépendant. Sans filtre, sans bullshit.
+        </p>
+      </div>
+    </div>
+
+    <section class="blog-layout">
+      <div class="container">
+
+        <!-- Search -->
+        <div class="blog-search-wrap" data-reveal="up">
+          <input type="text" placeholder="Rechercher un article…" />
+          <span class="blog-search-icon">⌕</span>
+        </div>
+
+        <!-- Featured -->
+        <div class="blog-hero" data-reveal="up" data-delay="80">
+          <div class="blog-hero-thumb" style="background:linear-gradient(135deg,#0f0c09,#1a1308)">
+            <div style="position:absolute;inset:0;background:radial-gradient(circle at 35% 50%,rgba(201,152,58,0.2),transparent 65%)"></div>
+            <div class="blog-hero-icon">⚡</div>
+          </div>
+          <div class="blog-hero-body">
+            <div class="blog-hero-label">✦ Article à la une</div>
+            <h2 class="blog-hero-title">
+              6 mois à travailler seul — ce que l'indépendance m'a vraiment appris
+            </h2>
+            <p class="blog-hero-excerpt">
+              Quitter le salariat pour devenir indépendant, c'est beaucoup plus que changer de statut juridique. C'est un changement de mentalité profond. Voici mon bilan honnête après 6 mois à naviguer seul.
+            </p>
+            <div class="blog-meta-row">
+              <span class="blog-cat-pill">Vie d'indépendant</span>
+              <span class="blog-date">28 jan 2025</span>
+              <span class="blog-readtime">· 9 min</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article list -->
+        <div class="article-list">
+
+          <div class="article-item" data-reveal="up" data-delay="40">
+            <div class="article-date">24 jan 2025</div>
+            <div>
+              <h3 class="article-title">React Server Components : retour d'expérience en production</h3>
+              <p class="article-excerpt">6 mois à utiliser les RSC sur Next.js 14. Les bonnes surprises, les pièges évitables, et les patterns qui fonctionnent en conditions réelles.</p>
+              <div style="margin-top:8px"><span class="blog-cat-pill">React · Next.js</span></div>
+            </div>
+            <span class="article-arrow">↗</span>
+          </div>
+
+          <div class="article-item" data-reveal="up" data-delay="80">
+            <div class="article-date">15 jan 2025</div>
+            <div>
+              <h3 class="article-title">CSS moderne en 2025 : les 10 fonctionnalités qui changent tout</h3>
+              <p class="article-excerpt">Container Queries, @layer, :has(), color-mix()… Le CSS natif est devenu si puissant qu'on peut souvent abandonner les frameworks.</p>
+              <div style="margin-top:8px"><span class="blog-cat-pill">CSS · Design</span></div>
+            </div>
+            <span class="article-arrow">↗</span>
+          </div>
+
+          <div class="article-item" data-reveal="up" data-delay="120">
+            <div class="article-date">8 jan 2025</div>
+            <div>
+              <h3 class="article-title">Mon setup de freelance en 2025 : outils, routines et organisation</h3>
+              <p class="article-excerpt">Notion, Linear, Fathom, Stripe… Voici exactement les outils que j'utilise pour gérer mes missions, ma comptabilité et ma productivité en solo.</p>
+              <div style="margin-top:8px"><span class="blog-cat-pill">Indépendant · Outils</span></div>
+            </div>
+            <span class="article-arrow">↗</span>
+          </div>
+
+          <div class="article-item" data-reveal="up" data-delay="160">
+            <div class="article-date">2 jan 2025</div>
+            <div>
+              <h3 class="article-title">CI/CD parfait avec GitHub Actions + Docker : mon pipeline 2025</h3>
+              <p class="article-excerpt">Le pipeline que j'utilise sur tous mes projets : tests, build multi-stage, déploiement zero-downtime et rollback automatique. Tout en détail.</p>
+              <div style="margin-top:8px"><span class="blog-cat-pill">DevOps · Docker</span></div>
+            </div>
+            <span class="article-arrow">↗</span>
+          </div>
+
+          <div class="article-item" data-reveal="up" data-delay="40">
+            <div class="article-date">20 déc 2024</div>
+            <div>
+              <h3 class="article-title">Intégrer Claude API dans Next.js — Guide complet avec streaming</h3>
+              <p class="article-excerpt">De l'installation à la mise en prod, avec gestion du streaming SSE, des erreurs, du rate limiting et une interface conversationnelle robuste.</p>
+              <div style="margin-top:8px"><span class="blog-cat-pill">IA · API · Next.js</span></div>
+            </div>
+            <span class="article-arrow">↗</span>
+          </div>
+
+          <div class="article-item" data-reveal="up" data-delay="80">
+            <div class="article-date">12 déc 2024</div>
+            <div>
+              <h3 class="article-title">Fixer son TJM : la méthode que j'aurais voulu avoir dès le départ</h3>
+              <p class="article-excerpt">Comment calculer un tarif journalier juste — ni trop bas (erreur de débutant) ni trop haut. Avec une formule concrète et des benchmarks sectoriels.</p>
+              <div style="margin-top:8px"><span class="blog-cat-pill">Indépendant · Business</span></div>
+            </div>
+            <span class="article-arrow">↗</span>
+          </div>
+
+          <div class="article-item" data-reveal="up" data-delay="120">
+            <div class="article-date">5 déc 2024</div>
+            <div>
+              <h3 class="article-title">Sécuriser son API REST : les 12 erreurs que font 90% des développeurs</h3>
+              <p class="article-excerpt">OWASP Top 10 en pratique, JWT sécurisé, validation des inputs, rate limiting… Un guide complet pour ne plus exposer vos utilisateurs.</p>
+              <div style="margin-top:8px"><span class="blog-cat-pill">Sécurité · Backend</span></div>
+            </div>
+            <span class="article-arrow">↗</span>
+          </div>
+
+          <div class="article-item" data-reveal="up" data-delay="160">
+            <div class="article-date">28 nov 2024</div>
+            <div>
+              <h3 class="article-title">TypeScript strict mode : pourquoi j'ai mis du temps à l'adopter et pourquoi je ne reviendrai jamais en arrière</h3>
+              <p class="article-excerpt">La configuration que j'utilise, les erreurs que strict mode m'a évité en production, et comment migrer progressivement un projet existant.</p>
+              <div style="margin-top:8px"><span class="blog-cat-pill">TypeScript</span></div>
+            </div>
+            <span class="article-arrow">↗</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <div class="newsletter-band">
+      <div class="container">
+        <div data-reveal="up">
+          <h2 class="newsletter-title">Ne ratez aucun <em>article</em></h2>
+          <p class="newsletter-sub">Une newsletter bimensuelle — articles, ressources, réflexions. Pas de spam.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="votre@email.com" />
+            <button class="btn btn-gold">S'abonner →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">Votre Nom</span>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+      </div>
+      <span class="footer-copy">© 2025 · Fait avec soin</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

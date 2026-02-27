@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projets — Portfolio</title>
+  <meta name="description" content="Mes projets web, mobile, design et stratégie — une sélection de travaux réalisés en indépendant." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>" />
+  <style>
+    .filter-bar { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:56px; }
+    .filter-btn {
+      padding:8px 20px;
+      border-radius:99px;
+      font-family:var(--font-mono);
+      font-size:0.68rem;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      color:var(--text-3);
+      background:transparent;
+      border:1px solid var(--line);
+      cursor:pointer;
+      transition:all 0.25s;
+    }
+    .filter-btn:hover { color:var(--text-1); border-color:var(--text-3); }
+    .filter-btn.active { background:var(--gold); color:#0C0A07; border-color:var(--gold); }
+  </style>
+</head>
+<body>
+  <a href="#top" class="back-top">↑</a>
+
+  <nav class="nav" id="top">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-mark">✦</div>
+        <span>Votre Nom</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="projects.html" class="nav-link">Projets</a></li>
+        <li><a href="about.html" class="nav-link">À propos</a></li>
+        <li><a href="blog.html" class="nav-link">Journal</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-btn"><span class="theme-icon">☀️</span></button>
+        <button class="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html" class="nav-link">Accueil</a>
+      <a href="projects.html" class="nav-link">Projets</a>
+      <a href="about.html" class="nav-link">À propos</a>
+      <a href="blog.html" class="nav-link">Journal</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+      <div class="container">
+        <div style="font-family:var(--font-mono);font-size:0.65rem;color:var(--gold);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:16px" data-reveal="fade">Travaux — Portfolio</div>
+        <h1 style="font-family:var(--font-display);font-weight:300;font-size:clamp(3rem,7vw,5.5rem);line-height:1.05;letter-spacing:-0.01em;color:var(--text-1);margin-bottom:20px" data-reveal="up" data-delay="60">
+          Mes projets
+        </h1>
+        <p style="font-size:1rem;color:var(--text-2);font-weight:300;max-width:520px;line-height:1.8" data-reveal="up" data-delay="120">
+          Chaque projet est une histoire — un problème réel, une solution sur mesure, un résultat mesurable. Du code propre, du design réfléchi.
+        </p>
+      </div>
+    </div>
+
+    <!-- Filter + Projects -->
+    <section class="project-list">
+      <div class="container">
+
+        <div class="filter-bar" data-reveal="fade">
+          <button class="filter-btn active" data-filter="all">Tout</button>
+          <button class="filter-btn" data-filter="web">Web App</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+          <button class="filter-btn" data-filter="api">Backend / API</button>
+          <button class="filter-btn" data-filter="oss">Open Source</button>
+        </div>
+
+        <!-- 01 -->
+        <div class="project-item" data-cat="web" data-reveal="up">
+          <div class="project-visual" style="background:linear-gradient(135deg,#0f0c09,#1a1308)">
+            <div class="project-visual-bg" style="background:radial-gradient(circle at 35% 40%,rgba(201,152,58,0.3),transparent 65%)"></div>
+            <div class="project-visual-icon">🛒</div>
+            <div class="project-visual-overlay">
+              <a href="#" class="btn btn-ghost">Voir le projet ↗</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-index">01 — Web App · 2024</div>
+            <h2 class="project-title">NovaBuy Platform</h2>
+            <p class="project-desc">Plateforme e-commerce B2C complète avec gestion des stocks temps réel, checkout Stripe, dashboard vendeur analytics et système de recommandations IA. Architecture headless, performance ×3.</p>
+            <div class="project-stack">
+              <span class="stack-chip">Next.js 14</span>
+              <span class="stack-chip">TypeScript</span>
+              <span class="stack-chip">PostgreSQL</span>
+              <span class="stack-chip">Stripe</span>
+              <span class="stack-chip">Redis</span>
+              <span class="stack-chip">Vercel</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-gold" style="font-size:0.8rem;padding:10px 20px">Live ↗</a>
+              <a href="#" class="btn btn-outline" style="font-size:0.8rem;padding:10px 20px">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 02 -->
+        <div class="project-item reverse" data-cat="web" data-reveal="up">
+          <div class="project-visual" style="background:linear-gradient(135deg,#090b10,#0d1018)">
+            <div class="project-visual-bg" style="background:radial-gradient(circle at 65% 35%,rgba(100,120,255,0.25),transparent 65%)"></div>
+            <div class="project-visual-icon">📊</div>
+            <div class="project-visual-overlay">
+              <a href="#" class="btn btn-ghost">Voir le projet ↗</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-index">02 — SaaS · 2024</div>
+            <h2 class="project-title">AnalyticsPro Dashboard</h2>
+            <p class="project-desc">Solution SaaS d'analyse de données business avec 40+ visualisations D3.js interactives, export PDF/Excel, alertes automatiques, gestion multi-équipes et API publique.</p>
+            <div class="project-stack">
+              <span class="stack-chip">React</span>
+              <span class="stack-chip">D3.js</span>
+              <span class="stack-chip">Node.js</span>
+              <span class="stack-chip">MongoDB</span>
+              <span class="stack-chip">WebSocket</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-gold" style="font-size:0.8rem;padding:10px 20px">Live ↗</a>
+              <a href="#" class="btn btn-outline" style="font-size:0.8rem;padding:10px 20px">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 -->
+        <div class="project-item" data-cat="mobile" data-reveal="up">
+          <div class="project-visual" style="background:linear-gradient(135deg,#0c0f0a,#121608)">
+            <div class="project-visual-bg" style="background:radial-gradient(circle at 40% 60%,rgba(80,200,100,0.2),transparent 65%)"></div>
+            <div class="project-visual-icon">📱</div>
+            <div class="project-visual-overlay">
+              <a href="#" class="btn btn-ghost">Voir le projet ↗</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-index">03 — Mobile · 2023</div>
+            <h2 class="project-title">FitTrack App</h2>
+            <p class="project-desc">Application iOS/Android de suivi fitness avec plans d'entraînement personnalisés par IA, synchronisation wearables Garmin/Apple Watch, gamification et communauté. 12k+ utilisateurs actifs.</p>
+            <div class="project-stack">
+              <span class="stack-chip">React Native</span>
+              <span class="stack-chip">Expo</span>
+              <span class="stack-chip">Supabase</span>
+              <span class="stack-chip">TF Lite</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-gold" style="font-size:0.8rem;padding:10px 20px">App Store ↗</a>
+              <a href="#" class="btn btn-outline" style="font-size:0.8rem;padding:10px 20px">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 04 -->
+        <div class="project-item reverse" data-cat="api" data-reveal="up">
+          <div class="project-visual" style="background:linear-gradient(135deg,#0a0c0f,#0f1218)">
+            <div class="project-visual-bg" style="background:radial-gradient(circle at 50% 50%,rgba(0,200,220,0.15),transparent 65%)"></div>
+            <div class="project-visual-icon">🤖</div>
+            <div class="project-visual-overlay">
+              <a href="#" class="btn btn-ghost">Voir le projet ↗</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-index">04 — IA · API · 2024</div>
+            <h2 class="project-title">ChatForge AI</h2>
+            <p class="project-desc">Intégration LLM multi-modèles avec mémoire contextuelle persistante, RAG sur documents personnels, streaming SSE, interface white-label et analytics d'utilisation.</p>
+            <div class="project-stack">
+              <span class="stack-chip">Python</span>
+              <span class="stack-chip">FastAPI</span>
+              <span class="stack-chip">LangChain</span>
+              <span class="stack-chip">Pinecone</span>
+              <span class="stack-chip">React</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-gold" style="font-size:0.8rem;padding:10px 20px">Demo ↗</a>
+              <a href="#" class="btn btn-outline" style="font-size:0.8rem;padding:10px 20px">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 05 -->
+        <div class="project-item" data-cat="design" data-reveal="up">
+          <div class="project-visual" style="background:linear-gradient(135deg,#0d0b10,#130d18)">
+            <div class="project-visual-bg" style="background:conic-gradient(from 220deg at 50% 50%,rgba(201,152,58,0.15),rgba(120,60,200,0.12),transparent)"></div>
+            <div class="project-visual-icon">🎨</div>
+            <div class="project-visual-overlay">
+              <a href="#" class="btn btn-ghost">Voir le projet ↗</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-index">05 — Design System · 2023</div>
+            <h2 class="project-title">DesignSystem Pro</h2>
+            <p class="project-desc">Système de design complet avec 120+ composants Figma, tokens de design variables, documentation interactive Storybook et générateur de code React/Vue automatique.</p>
+            <div class="project-stack">
+              <span class="stack-chip">Figma</span>
+              <span class="stack-chip">Storybook</span>
+              <span class="stack-chip">React</span>
+              <span class="stack-chip">CSS Custom Props</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-gold" style="font-size:0.8rem;padding:10px 20px">Figma ↗</a>
+              <a href="#" class="btn btn-outline" style="font-size:0.8rem;padding:10px 20px">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 06 -->
+        <div class="project-item reverse" data-cat="oss" data-reveal="up">
+          <div class="project-visual" style="background:linear-gradient(135deg,#0f0a08,#180d0a)">
+            <div class="project-visual-bg" style="background:radial-gradient(circle at 60% 40%,rgba(255,100,60,0.15),transparent 65%)"></div>
+            <div class="project-visual-icon">⚙️</div>
+            <div class="project-visual-overlay">
+              <a href="#" class="btn btn-ghost">Voir le projet ↗</a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-index">06 — Open Source · 2023</div>
+            <h2 class="project-title">react-hooks-utils</h2>
+            <p class="project-desc">Collection de hooks React ultra-optimisés. useDebounce, useVirtualList, useForm avancé, useLocalStorage type-safe et bien plus. 2.4k ★ GitHub, 80k+ téléchargements npm par mois.</p>
+            <div class="project-stack">
+              <span class="stack-chip">React</span>
+              <span class="stack-chip">TypeScript</span>
+              <span class="stack-chip">Vitest</span>
+              <span class="stack-chip">npm</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-gold" style="font-size:0.8rem;padding:10px 20px">npm ↗</a>
+              <a href="#" class="btn btn-outline" style="font-size:0.8rem;padding:10px 20px">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">Votre Nom</span>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+      </div>
+      <span class="footer-copy">© 2025 · Fait avec soin</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
